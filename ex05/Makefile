@@ -6,12 +6,12 @@
 #    By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/11 12:51:10 by vfurmane          #+#    #+#              #
-#    Updated: 2021/11/16 12:15:56 by vfurmane         ###   ########.fr        #
+#    Updated: 2021/11/16 12:15:49 by vfurmane         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= replace
-SRCS		= main.cpp
+NAME		= karen
+SRCS		= main.cpp Karen.cpp
 OBJS		= $(SRCS:.cpp=.o)
 CC			= c++
 CFLAGS		= -Wall -Wextra -Werror -std=c++98
