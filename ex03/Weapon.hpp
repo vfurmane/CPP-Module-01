@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 12:09:45 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/11/11 12:16:37 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/11/21 17:18:40 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ public:
 
 	Weapon(std::string name);
 	~Weapon(void);
-	const std::string&	getType(void);
+	const std::string	&getType(void);
 	void				setType(std::string type);
 
 private:

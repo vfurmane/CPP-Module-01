@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 12:15:45 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/11/11 12:16:49 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/11/21 17:18:56 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ Weapon::~Weapon(void)
 {
 }
 
-const std::string&	Weapon::getType(void)
+const std::string	&Weapon::getType(void)
 {
 	return (this->_type);
 }
