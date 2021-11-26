@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 13:21:32 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/11/09 15:26:15 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/11/26 09:37:43 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,10 @@
 
 Zombie::Zombie(void) : _name("Micheal Jackson")
 {
-	this->announce();
 }
 
 Zombie::Zombie(std::string name) : _name(name)
 {
-	std::cout << "Here!" << std::endl;
-	this->announce();
 }
 
 Zombie::~Zombie(void)
