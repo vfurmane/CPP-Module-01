@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 12:29:13 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/11/20 14:46:09 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/11/26 13:05:40 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,13 @@ Karen::Karen(void)
 {
 	this->_complains[0] = &Karen::debug;
 	this->_complains[1] = &Karen::info;
-	this->_complains[2] = &Karen::warn;
+	this->_complains[2] = &Karen::warning;
 	this->_complains[3] = &Karen::error;
 }
 
 int	Karen::getComplainIndex(const std::string level)
 {
-	const std::string		complains[] = {"DEBUG", "INFO", "WARN", "ERROR"};
+	const std::string		complains[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	for (int i = 0; i< 4; i++)
 	{
 		if (level.compare(complains[i]) == 0)
@@ -51,7 +51,7 @@ void	Karen::info(void)
 	std::cout << "I cannot believe adding extra bacon cost more money. You don’t put enough! If you did I would not have to ask for it!" << std::endl;
 }
 
-void	Karen::warn(void)
+void	Karen::warning(void)
 {
 	std::cout << "I think I deserve to have some extra bacon for free. I’ve been coming here for years and you just started working here last month." << std::endl;
 }

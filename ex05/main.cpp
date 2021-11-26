@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 14:00:57 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/11/16 17:42:11 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/11/26 13:03:53 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,8 @@ int	main(void)
 
 	smith.complain("DEBUG");
 	smith.complain("INFO");
-	smith.complain("WARN");
+	smith.complain("WARNING");
 	smith.complain("ERROR");
-	smith.complain("WARN");
-	smith.complain("INFO");
-	smith.complain("DEBUG");
+	smith.complain("KAREN");
 	return (0);
 }

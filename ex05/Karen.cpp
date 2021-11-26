@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 12:29:13 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/11/16 17:42:40 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/11/26 13:04:08 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ Karen::Karen(void)
 {
 	this->_complains[0] = &Karen::debug;
 	this->_complains[1] = &Karen::info;
-	this->_complains[2] = &Karen::warn;
+	this->_complains[2] = &Karen::warning;
 	this->_complains[3] = &Karen::error;
 }
 
@@ -32,7 +32,7 @@ static int	getComplainIndex(const std::string complains[], const std::string lev
 
 void	Karen::complain(std::string level)
 {
-	const std::string		complain_levels[] = {"DEBUG", "INFO", "WARN", "ERROR"};
+	const std::string		complain_levels[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	int						index;
 
 	index = getComplainIndex(complain_levels, level);
@@ -51,7 +51,7 @@ void	Karen::info(void)
 	std::cout << "I cannot believe adding extra bacon cost more money. You don’t put enough! If you did I would not have to ask for it!" << std::endl;
 }
 
-void	Karen::warn(void)
+void	Karen::warning(void)
 {
 	std::cout << "I think I deserve to have some extra bacon for free. I’ve been coming here for years and you just started working here last month." << std::endl;
 }

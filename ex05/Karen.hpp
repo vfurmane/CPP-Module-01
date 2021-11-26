@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 12:17:14 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/11/16 17:34:53 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/11/26 13:03:31 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ private:
 
 	void	debug(void);
 	void	info(void);
-	void	warn(void);
+	void	warning(void);
 	void	error(void);
 	karen_complains	_complains[4];
 

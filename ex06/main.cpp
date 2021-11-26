@@ -6,7 +6,7 @@
 /*   By: vfurmane <vfurmane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 14:00:57 by vfurmane          #+#    #+#             */
-/*   Updated: 2021/11/20 15:00:44 by vfurmane         ###   ########.fr       */
+/*   Updated: 2021/11/26 13:06:54 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 #define DEBUG_INDEX 0
 #define INFO_INDEX 1
-#define WARN_INDEX 2
+#define WARNING_INDEX 2
 #define ERROR_INDEX 3
 
 int	main(int argc, char **argv)
@@ -43,11 +43,11 @@ int	main(int argc, char **argv)
 				std::cout << "[ INFO ]" << std::endl;
 				smith.complain("INFO");
 				std::cout << std::endl;
-				level = "WARN";
+				level = "WARNING";
 				break ;
-			case WARN_INDEX:
+			case WARNING_INDEX:
 				std::cout << "[ WARNING ]" << std::endl;
-				smith.complain("WARN");
+				smith.complain("WARNING");
 				std::cout << std::endl;
 				level = "ERROR";
 				break ;
